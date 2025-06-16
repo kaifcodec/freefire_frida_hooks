@@ -12,7 +12,7 @@ def register_guest():
     payload_str = f"password={password}&client_type=2&source=2&app_id=100067"
 
     # Random 64-char device_id (could be constant too if needed)
-    device_id = "2ee44819e9b4598845141067b281621874d0d5d7af9d8f7e00c1e54715b7d1e3"
+    device_id = "" # add yours 
 
     signature = get_signature(device_id, payload_str)
 
@@ -24,7 +24,7 @@ def register_guest():
     }
 
     headers = {
-        'User-Agent': "GarenaMSDK/4.0.19P9(Infinix X682B ;Android 10;en;US;)",
+        'User-Agent': "", # add yours
         'Connection': "Keep-Alive",
         'Accept-Encoding': "gzip",
         'Authorization': f"Signature {signature}"
