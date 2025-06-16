@@ -19,7 +19,7 @@ def register_guest():
     signature = generate_signature(payload)
 
     headers = {
-        "User-Agent": "GarenaMSDK/4.0.19P9(Infinix X682B ;Android 10;en;US;)",
+        "User-Agent": "<your_user_agent>", # Replace with your actual value
         "Authorization": f"Signature {signature}",
         "Content-Type": "application/x-www-form-urlencoded",
         "Accept-Encoding": "gzip"

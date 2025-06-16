@@ -5,7 +5,7 @@ from Crypto.Protocol.KDF import PBKDF2
 from Crypto.Hash import SHA1
 
 # === Constants from frida log ===
-password = "RQz33k7wn3WSF7iAa5FzRh"
+password = "RQz33k7wn3WSF7iAa5FzRh" # values as captured during the creation of the repository
 salt = base64.b64decode("AAAAAAAAAAA=")
 iterations = 10000
 key_length = 64  # 512 bits = 64 bytes (as seen in your app source)
@@ -18,7 +18,7 @@ aes_key = full_key[:32]     # First 32 bytes for AES
 hmac_key = full_key[32:]    # Remaining 32 bytes for HMAC
 
 # === Data to be signed ===
-data = "password=C447CB9ACE8BEFA9A71FEA324A83F5024D03F737E488B5E3E006FDEE8F964F50&client_type=2&source=2&app_id=100067"
+data = "password=<guest_password>&client_type=2&source=2&app_id=100067" # Replace guest_password with actual value
 data_bytes = data.encode('utf-8')
 
 # === Perform HMAC ===
