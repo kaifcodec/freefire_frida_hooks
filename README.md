@@ -12,7 +12,7 @@ This repository contains a collection of Frida `.js` hook scripts used during a 
 - 🧂 `salt` used in crypto operations  
 - 🔑 Password generation logic  
 - 📦 Encrypted payload and header construction methods  
-
+- `important` directory is what worked for the owner to delete the app's account creation in the `/data/system_ce/android_ce.db` and removal of the account dynamically once it created.
 These hooks were written and refined as part of a reverse engineering effort to understand how the app internally builds secure requests — particularly in the context of automating **guest account creation** via HTTPS requests.
 
 ---
@@ -39,6 +39,7 @@ This project was part of a self-driven investigation into:
 - How it generates encrypted request bodies  
 - Header token/signature creation  
 - Gaining deeper understanding of client-side request signing and obfuscation techniques
+- How it keeps getting old guest account even after clear data and removal of the package from the root level.
 
 All data and hooks collected were for **educational** and **non-malicious** purposes.
 
