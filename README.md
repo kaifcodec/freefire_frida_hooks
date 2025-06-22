@@ -57,7 +57,7 @@ The owner does **not** condone any misuse, unauthorized access, or violation of 
 
 ## 🤝 Contribution & Contact
 
-Contributions are not currently open, as this is a personal archive (But you can open issue).  
+Contributions are open now. Add your own scripts and make PR.  
 If these scripts help you in any way, that's great. If not, they were never meant to. 😎
 
 ---
